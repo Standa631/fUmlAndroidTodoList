@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.belehradek.fuml.todolist.fumlandroidtodolist">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="com.orm.SugarApp">
+
+        <activity android:name=".HelloActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="net.belehradek.generated.todo.ListActivity" />
+        <activity android:name="net.belehradek.generated.todo.DetailActivity" />
+        <activity android:name=".ListActivity" />
+        <activity android:name=".DetailActivity" />
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="sugar_example.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+
+    </application>
+
+</manifest>
