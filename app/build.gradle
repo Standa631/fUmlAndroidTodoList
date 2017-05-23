@@ -33,7 +33,7 @@ dependencies {
     compile 'com.android.support:design:24.2.1'
 }
 
-task necodelej << {
-    println '----do it before build----'
-}
-preBuild.dependsOn necodelej
+//task necodelej << {
+//    println '----do it before build----'
+//}
+//preBuild.dependsOn necodelej

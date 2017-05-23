@@ -8,13 +8,6 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.util.Log;
 
-//TODO
-import net.belehradek.fuml.todolist.fumlandroidtodolist.R;
-
-//TODO
-
-//Activity
-
 public class DetailActivity extends AppCompatActivity {
 
     @Override
@@ -45,29 +38,28 @@ public DetailActivity () {
 public void onStart (String[] params) {
     	//TODO: implement operation
 
-String[] _tmp_9 = params;
-showItem(_tmp_9);
+String[] _tmp_18 = params;
 Log.d("fUml", "DetailActivity start!");
+this.showItem(_tmp_18);
 
     }
 
 public void showItem (String[] id) {
     	//TODO: implement operation
 
-String[] _tmp_10 = id;
+String[] _tmp_19 = id;
 
     }
 
 public void addItem (String label) {
     	//TODO: implement operation
 
-String _tmp_11 = label;
-String _tmp_12 = _tmp_11;
-    Item _tmp_14 = new Item();
-    Item _tmp_13 = _tmp_14;
-_tmp_13.label = _tmp_12;
-
-    _tmp_13.save();
+String _tmp_20 = label;
+String _tmp_21 = _tmp_20;
+net.belehradek.generated.todo.Item _tmp_22 = new Item();
+net.belehradek.generated.todo.Item _tmp_23 = _tmp_22;
+_tmp_23.label = _tmp_21;
+_tmp_23.save();
 
     }
 
